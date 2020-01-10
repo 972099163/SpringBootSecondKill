@@ -90,7 +90,7 @@ public class KillController {
         }
         BaseResponse response=new BaseResponse(StatusCode.Success);
         try {
-            Boolean res=killService.killItemV2(dto.getKillId(),dto.getUserId());
+         //   Boolean res=killService.killItemV2(dto.getKillId(),dto.getUserId());
             //不加分布式锁的前提
             /*Boolean res=killService.killItemV2(dto.getKillId(),dto.getUserId());
             if (!res){
